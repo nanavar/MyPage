@@ -1,0 +1,100 @@
+body {
+    background: black;
+}
+
+h1 {
+  color: #6F4CAD;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'Baloo 2', cursive;
+  letter-spacing: 7px;
+  cursor: pointer
+}
+
+h1 span{
+  transition: .5s linear
+}
+
+h1:hover span{
+  color: #D0C3EB;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff,
+               0 0 40px #fff;
+}
+
+.social-icon {
+    color: #997ACF;
+    font-size: 30px;
+    margin: 0 5px;
+}
+
+.social-icon:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff,
+               0 0 40px #fff;
+}
+
+#avatar {
+    background-image: url("/static/img/avatar.jpg");
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: top-center;
+    margin: auto;
+    border-radius: 50%;
+}
+
+h2 {
+    color: #9890A4;
+    font-size: 40px;
+}
+
+h3 {
+    color: #997ACF;
+    font-size: 30px;
+}
+
+i {
+    font-size: 16px;
+}
+
+b {
+    color: #826CAF;
+}
+
+.text {
+    font-size: 20px;
+    color: #9890A4;
+}
+
+.link {
+    color: #795CAB;
+}
+
+.small-middle-container{
+	margin: auto;
+	width: 55%;
+}
+
+.form-text {
+    font-size: 18px;
+    color: #C4B2E4;
+}
+
+br {
+    margin: 2px;
+}
+
+.btn-purple {
+    background-color: #997ACF;
+    color: white;
+}
+
+.btn-purple:hover {
+  color: #997ACF;
+  background-color: #D0C3EB;
+  box-shadow:  0 0 10px #fff,
+               0 0 20px #fff,
+               0 0 40px #fff;
+}

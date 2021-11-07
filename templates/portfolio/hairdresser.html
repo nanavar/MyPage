@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>InStyle Studio</title>
+
+    <link href="/static/portfolio/hairdresser/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/portfolio/hairdresser/custom.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" type="text/css">
+
+
+<!-- Javascript files --->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/static/portfolio/hairdresser/js/bootstrap.js"></script>
+</head>
+
+<body>
+
+<!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/static/img/logo.png" alt="" height="50"></a>
+      <form class="d-flex">
+      <input class="form-control text-white bg-dark me-2" type="search" placeholder="Iskanje" aria-label="Search">
+      <button class="btn btn-dark" type="submit">Išči</button>
+      </form>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about" data-toggle="modal" data-target="#about">O nas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Storitve</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#appointment">Naročanje</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">Pogosta vprašanja</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- carousel -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src=/static/img/slika1.jpg" class="d-block w-100" alt="image 1">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="/static/img/slika2.jpg" class="d-block w-100" alt="image 2">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/static/img/slika3.jpg" class="d-block w-100" alt="image 3">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+<!-- Storitve -->
+    <div class="container mt-4" id="services">
+        <h1 class="text-center p-4">Storitve</h1>
+        <div class="row">
+           <div class="col-md-4">
+                <div class="card text-white bg-dark">
+                    <img src="/static/img/storitev1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title bg-dark text-white text-center">Striženje</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-white bg-dark">
+                    <img src="/static/img/storitev2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="ccard-title bg-dark text-white text-center">Barvanje</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-white bg-dark">
+                    <img src="/static/img/storitev3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title bg-dark text-white text-center">Styling</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- naročanje -->
+    <div class="container mt-4" id="appointment">
+        <h1 class="text-center p-1">Naroči se na tremin!</h1>
+     <br>
+
+     <div class="row">
+        <div class="col-md-4 offset-md-1 form-group">
+                <input type="text" class="form-control bg-dark text-white mt-3" placeholder="Ime in priimek">
+
+                <input type="text" class="form-control bg-dark text-white mt-3" placeholder="Telefonska številka">
+
+                <input type="text" class="form-control bg-dark text-white mt-3" placeholder="Željen datum">
+
+                <textarea class="form-control bg-dark text-white mt-3" placeholder="Ostale informacije" rows="5"></textarea>
+
+                <input type="checkbox" class="mt-3"> <b style="color:white;">Strinjam se s splošnimi pogoji </b>
+            <br>
+                <button class="btn btn-dark mt-2">Pošlji</button>
+            </div>
+
+            <div class="col-md-4 offset-md-1">
+                <h3>Delovni čas</h3>
+                <table class="table table-dark table-hover">
+                    <thead>
+                        <tr>
+                            <th>Dan</th>
+                            <th>Odpiralni čas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ponedeljek</td>
+                            <td>10:00 - 20:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Torek</td>
+                            <td>10:00 - 20:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sreda</td>
+                            <td>10:00 - 20:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Četrtek</td>
+                            <td>10:00 - 20:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Petek</td>
+                            <td>8:00 - 18:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sobota</td>
+                            <td>8:00 - 12:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>! Ob nedeljah in praznikih smo zaprti.</p>
+        </div>
+     </div>
+    </div>
+
+<!-- pogosta vprašanja -->
+    <div class="accordion accordion-flush p-5" id="faq">
+        <h1 class="text-center p-2">Pogosta vprašanja</h1>
+      <div class="accordion-item bg-black text-white">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Moram priti na termin z opranimi lasmi?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Če želite biti hitreje ostriženi lahko na termin pridete z umito glavo, to pa nam sporočite v okencu <i>Ostale informacije</i>.</div>
+        </div>
+      </div>
+      <div class="accordion-item bg-black text-white">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Kaj storim, če na izbran termin ne moram priti?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">To nam prosim sporočite vsaj 12 ur pred terminom.</div>
+        </div>
+      </div>
+      <div class="accordion-item bg-black text-white">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Z končnim rezultatom nisem zadovoljna/zadovoljen, kaj storiti?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Vedno nas lahko pokličete, če imate kakšne pripombe in z veseljem vam bomo uredili frizuro po vaših željah.</div>
+        </div>
+      </div>
+    </div>
+
+<!-- footer -->
+    <footer class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Kontakt</h3>
+                <p>InStyle Studio
+                    <br>
+                Style street 0
+                    <br>
+                <b>Telefon:</b> 0510000001
+                    <br>
+                <b>Davčna številka:</b>0000000001
+                    <br>
+                <b>E-mail:</b> instyle@studio.com</p>
+            </div>
+            <div class="col">
+                <img class="img-fluid" width="250px" src="/static/img/logo2.png">
+            </div>
+            <div class="col">
+                <img class="img-fluid" width="100px" src="https://pbs.twimg.com/profile_images/2426514223/tj7412x847yzhmxkx2xp.jpeg">
+                <img class="img-fluid" width="150px" src="https://logos-download.com/wp-content/uploads/2016/05/Paul_Mitchell_logo_black.png">
+                <img class="img-fluid" width="150px" src="https://4.bp.blogspot.com/-VGd9D6cJ1Cc/ULsHQmkAwlI/AAAAAAAAq-Y/xKYTQ7GlHh0/s1600/Screen+Shot+2012-12-02+at+3.45.43+PM.png">
+            </div>
+        </div>
+    </footer>
+
+<!-- modal -->
+<div class="modal fade" id="about">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">For your Queries</h5>
+            </div>
+            <div class="modal-body">
+                IF you have any questions, Mess Manager Office number is <strong>+01234567890</strong> or you can email us by <strong>Ouremail@domain.com</strong>>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss = "modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

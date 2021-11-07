@@ -1,0 +1,25 @@
+body {
+    font-family: 'Montserrat', sans-serif!important;
+    background: black !important;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+}
+
+h3{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p {
+    color:white;
+}
+
+.img-fluid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
