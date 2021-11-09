@@ -1,5 +1,7 @@
 from flask import Flask, render_template
 
+import datetime
+
 app = Flask(__name__)
 
 @app.route("/")
@@ -8,7 +10,14 @@ def index():
 
 @app.route("/about")
 def about():
-    return render_template("about.html")
+    locations = ["Ljubljana", ", Slovenia"]
+    age = "27"
+    university = "Diploma in Cosmetics Science"
+    programming = ["Python", ", JavaScript"]
+    languages = ["English", ", Slovenian", ", Korean", ", Italian"]
+    #   current_year = datetime.datetime.now().year
+    return render_template("about.html", locations=locations, age=age, university=university, programming=programming,
+                           languages=languages)
 
 @app.route("/portfolio")
 def portfolio():
