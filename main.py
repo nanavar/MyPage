@@ -19,6 +19,10 @@ def about():
     return render_template("about.html", locations=locations, age=age, university=university, programming=programming,
                            languages=languages)
 
+@app.route("/thankyou")
+def thankyou():
+    return render_template("thankyou.html")
+
 @app.route("/portfolio")
 def portfolio():
     return render_template("portfolio.html")

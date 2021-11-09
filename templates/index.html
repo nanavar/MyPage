@@ -9,17 +9,22 @@
 <!-- contact -->
 
     <div class="container-main p-5 mt-10 mb-10">
-        <div class="small-middle-container">
-            <h2 class="btn-shine">Contact me!</h2>
-            <br>
-          <label for="exampleFormControlInput1" class="form-label form-text">Email address</label>
-          <input type="email" class="form-control bg-dark text-white" id="exampleFormControlInput1" placeholder="name@example.com">
-            <br>
-        </div>
-        <div class="small-middle-container">
-          <label for="exampleFormControlTextarea1" class="form-label form-text">Your text</label>
-          <textarea class="form-control bg-dark text-white" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
+         <form action="https://formsubmit.co/your@email.com" method="POST">
+            <div class="small-middle-container">
+                <h2 class="btn-shine">Contact me!</h2>
+                <br>
+              <label for="email" class="form-label form-text">E-mail address</label>
+              <input type="email" name="email" class="form-control bg-dark text-white" id="email" placeholder="name@example.com" required>
+                <br>
+            </div>
+
+            <div class="small-middle-container">
+              <label for="text" class="form-label form-text">Your text</label>
+              <textarea type="text" name="text" class="form-control bg-dark text-white" id="text" rows="3"></textarea>
+                <br>
+                <button type="submit" class="btn btn-purple">Send e-mail</button>
+            </div>
+        </form>
     </div>
 
 {% endblock content %}

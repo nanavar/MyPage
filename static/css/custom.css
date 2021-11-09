@@ -35,8 +35,8 @@ h1:hover span{
 
 #avatar {
     background-image: url("/static/img/avatar.jpg");
-    width: 300px;
-    height: 300px;
+    max-width: 300px;
+    height: auto;
     background-size: cover;
     background-position: top-center;
     margin: auto;
@@ -100,4 +100,12 @@ br {
   box-shadow:  0 0 10px #fff,
                0 0 20px #fff,
                0 0 40px #fff;
+}
+
+.centered {
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
 }
